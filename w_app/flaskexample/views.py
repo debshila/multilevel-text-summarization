@@ -11,6 +11,7 @@ import gensim as gs
 from gensim.parsing.preprocessing import remove_stopwords
 from gensim.utils import simple_preprocess
 from nltk.stem import WordNetLemmatizer 
+from nltk import sent_tokenize
 # Init the Wordnet Lemmatizer
 wnl = WordNetLemmatizer()
 
@@ -33,9 +34,10 @@ def index():
 def get_text():
     # text = request.form.get('textbox')
     text = request.get_json(force=True)['text']
-
-    result = summarize(text, ratio = 0.30, split = True)
-    title = summarize(text, ratio = 0.08, split = True)
+    #text =  mystring.replace('\n', ' ')
+#    text = sent_tokenize(text)
+    result = summarize(text, ratio = 0.20, split = True)
+    title = summarize(text, ratio = 0.08, split = True) #
 
     #result = model.predict(text)
     return jsonify({'Title':title, 'Gist': result})
