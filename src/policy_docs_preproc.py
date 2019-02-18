@@ -16,7 +16,6 @@ import requests
 import random
 import os
 import re
-from xml.etree import cElementTree as ET
 from sklearn.externals import joblib
 from pickle import dump,load
 
@@ -28,7 +27,6 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 import html5lib
 import re
 from bs4 import BeautifulSoup
-import requests
 import xml.etree.ElementTree as etree
 
 # Enable logging for gensim - optional
