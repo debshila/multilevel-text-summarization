@@ -6,5 +6,4 @@ For the purposes of this project, I focused on understanding the latent themes i
 
 Try my web app to examine the most critical sentences from privacy policy documents while also observing common themes underlying similar privacy policy documents: https://gist-do-it.herokuapp.com/
 
-- Step_1:  Parse data from XML files.
 

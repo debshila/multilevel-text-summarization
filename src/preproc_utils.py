@@ -56,6 +56,7 @@ import logging
 logging.basicConfig(
     format='%(asctime)s : %(levelname)s : %(message)s', level=logging.ERROR)
 
+nlp = spacy.load('en_core_web_sm')
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 random.seed(0)
 ###############################################################################
@@ -139,7 +140,6 @@ def read_data_from_url(link, pat = '[^a-zA-z0-9.?! ]+', filt_len = 6):
 
 
 # load spacy pretrained model for Named Entity Recognition
-nlp = spacy.load('en_core_web_sm')
 def remove_names(text, ner_2_filter = ['PERSON', 'GPE', 'ORG', 'DATE','PRODUCT']):
     doc = nlp(text)
     removed_name = []
