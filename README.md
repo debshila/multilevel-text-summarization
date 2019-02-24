@@ -6,4 +6,5 @@ For the purposes of this project, I focused on understanding the latent themes i
 
 Try my web app to examine the most critical sentences from privacy policy documents while also observing common themes underlying similar privacy policy documents: https://gist-do-it.herokuapp.com/
 
+The github repo for the web app can be found here: https://github.com/debshila/gist-do-it/tree/master
 
